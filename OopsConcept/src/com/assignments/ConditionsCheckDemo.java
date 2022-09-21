@@ -247,7 +247,7 @@ public class ConditionsCheckDemo {
 		{
 			ConditionsCheckDemo c = new ConditionsCheckDemo();
 		Scanner s = new Scanner(System.in);
-/*
+
 		
 		  System.out.println("Enter the number to check is is positive or negative");
 		  c.numberPostiveOrNegative(s.nextInt());
@@ -289,7 +289,7 @@ public class ConditionsCheckDemo {
 			  c.sumOfNaturalNos(s.nextInt()); 
 			  System.out.println("Enter a number to find the cube of the first n natural numbers");
 			  c.cubeOfNnos(s.nextInt());
-			 */
+			 
 			  int[] a = {2,3,4,5,6};
 			  int[] b = {2,3,4,5,6};
 			  System.out.println("Enter a number to find all pairs of elements in an array whose sum is equal to a entered number");

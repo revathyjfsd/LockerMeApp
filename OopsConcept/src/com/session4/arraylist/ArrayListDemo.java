@@ -23,6 +23,7 @@ public class ArrayListDemo {
 System.out.println(q.peek());
 
 
+
 		Set<Integer> list = new LinkedHashSet<Integer>();
 		list.add(12);list.add(13);list.add(14);list.add(15);
 		System.out.println(list);
@@ -78,7 +79,7 @@ System.out.println(q.peek());
 		}
 		Scanner s= new Scanner(System.in);
 		System.out.println("enter the number to serach the multidimensional array");
-		int input  = s.nextInt();
+		int input  = s.nextInt(); 
 		for (int i=0;i<3;i++)
 		{
 			for (int j=0;j<3;j++)

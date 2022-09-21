@@ -8,14 +8,21 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 import java.util.StringTokenizer;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import com.assignments.Logging.LoggerDemo;
 
 public class ArrayDemo {
+	static Logger logger = Logger.getLogger(LoggerDemo.class.getName());
 	private void sortArray(int[] numbers, String order)
 	{
+		
 		if(order.equals("D"))
 		{
 			Arrays.sort(numbers);
 			System.out.println("Sorted Array in descending order " +Arrays.toString(numbers));
+			logger.log(Level.INFO, "Array is diplayed in logger");
 		}
 		else if(order.equals("A"))
 		{
