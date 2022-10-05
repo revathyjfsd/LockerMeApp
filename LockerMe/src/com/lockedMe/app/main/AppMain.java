@@ -11,7 +11,7 @@ public class AppMain {
 	
 	public static void main(String[] args) throws FileNotExistException,IOException{
 		
-		System.out.println("Welcome to LockedMe.com. \n"
+		System.out.println("Welcome to LockedMe \n"
 				+ "This Application is mainly to digitize the user specified files to be \n"
 				+ "added/deleted/searched in the location specified by the user. \n"
 				+ "This product is developed by the Company Lockers Pvt. Ltd\n");
@@ -25,7 +25,6 @@ public class AppMain {
 		boolean flag1=f.isDirectory();
 		if(flag && flag1)
 		{
-		
 		ProductServices ps = new ProductServices();
 		
 			synchronized (sc) {
@@ -40,6 +39,7 @@ public class AppMain {
 					ps.display(ps.getFileList(f));
 					break;
 				case "2":
+					flag1= true;
 					while(flag1) {
 						System.out.println("\nEnter any one option(a/b/c/d/) "
 								+ "for the below mentioned operation to be perfomed "
@@ -87,10 +87,7 @@ public class AppMain {
 			}
 			}
 		}
-		else if(!flag){
-			System.out.println("There is no directory/file denoted in this pathname " +path);
-		}else if(!flag1)
-		{
+		else{
 			System.out.println("This is not a Directory");
 		}
 	}
