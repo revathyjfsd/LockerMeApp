@@ -20,6 +20,7 @@ public class AppMain {
 		//String path = "C:\\Users\\Administrator\\Files\\a\\";
 		String path=sc.next();
 		File f = new File(path);
+		//s
 		File[] files;
 		boolean flag=f.exists();
 		boolean flag1=f.isDirectory();
