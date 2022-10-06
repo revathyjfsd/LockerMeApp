@@ -76,7 +76,7 @@ public class ProductServices {
 		}
 		else
 		{
-			System.out.println("Error occured while creating new File");
+			System.out.println("Error occurred while creating new File");
 					
 		} 
 		

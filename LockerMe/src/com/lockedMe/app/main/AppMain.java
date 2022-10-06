@@ -11,7 +11,7 @@ public class AppMain {
 	
 	public static void main(String[] args) throws FileNotExistException,IOException{
 		
-		System.out.println("Welcome to LockedMe \n"
+		System.out.println("Welcome to LockedMe App \n"
 				+ "This Application is mainly to digitize the user specified files to be \n"
 				+ "added/deleted/searched in the location specified by the user. \n"
 				+ "This product is developed by the Company Lockers Pvt. Ltd\n");
@@ -20,7 +20,6 @@ public class AppMain {
 		//String path = "C:\\Users\\Administrator\\Files\\a\\";
 		String path=sc.next();
 		File f = new File(path);
-		//s
 		File[] files;
 		boolean flag=f.exists();
 		boolean flag1=f.isDirectory();
@@ -33,7 +32,7 @@ public class AppMain {
 				
 				System.out.println("\nEnter any one number(1/2/3) "
 						+ "for the below mentioned operation to be perfomed "
-						+ "\n 1:Dipslay the file(s) in ascending order \n 2:Add/Delete/Search the file \n 3.Exit ");
+						+ "\n 1:Display the file(s) in ascending order \n 2:Add/Delete/Search the file \n 3.Exit ");
 				String key = sc.next();
 				switch (key) {
 				case "1":
