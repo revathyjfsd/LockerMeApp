@@ -89,7 +89,7 @@ public class ProductServices {
 			{
 				for(File fi :files)
 				{
-					if(fi.getName().equalsIgnoreCase(fileName))
+					if(fi.getName().equals(fileName))
 					{
 					fi.delete();
 					flag = true;
